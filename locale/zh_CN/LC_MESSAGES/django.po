@@ -1,0 +1,526 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-19 16:55+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: accounts/admin.py:16
+msgid "Permission"
+msgstr "用户权限"
+
+#: accounts/forms.py:17
+msgid "This email address is already in use. "
+msgstr "该邮箱已被使用。"
+
+#: accounts/forms.py:19
+msgid "This username is not allowed."
+msgstr "不允许使用的用户名。"
+
+#: accounts/forms.py:20
+msgid "This username is already taken."
+msgstr "该用户名已经被使用。"
+
+#: accounts/forms.py:22
+msgid "Only Special suffix of email address is enabled to signup."
+msgstr "只有特别声明的邮箱后缀才能注册。"
+
+#: accounts/forms.py:23
+msgid "You must agree to the terms to register"
+msgstr "您必须同意以上协议才能进行注册"
+
+#: accounts/forms.py:28
+msgid "email address"
+msgstr "邮箱地址"
+
+#: accounts/forms.py:34
+msgid "Submit"
+msgstr "确定"
+
+#: accounts/forms.py:35
+msgid "Reset"
+msgstr "重设"
+
+#: accounts/forms.py:75
+msgid "I have read and agree to the Terms of Service"
+msgstr "我已经阅读并且同意以上服务协议"
+
+#: accounts/forms.py:86
+#, python-format
+msgid "Remember me for %(days)d"
+msgstr "%(days)d天内自动登陆"
+
+#: accounts/forms.py:92
+#, fuzzy
+#| msgid "Log in"
+msgid "Login"
+msgstr "登陆"
+
+#: accounts/forms.py:106 accounts/forms.py:113
+msgid "Save"
+msgstr "保存"
+
+#: accounts/models.py:18
+msgid "department name"
+msgstr "部门名称"
+
+#: accounts/models.py:20
+msgid "description of department"
+msgstr "部门备注"
+
+#: accounts/models.py:21
+msgid "date joined"
+msgstr "加入时间"
+
+#: accounts/models.py:27 accounts/models.py:52
+msgid "department"
+msgstr "部门"
+
+#: accounts/models.py:46
+#, fuzzy
+#| msgid "the account must have an valid email address"
+msgid "the account must have an email address"
+msgstr "用户必须包含一个有效的邮箱地址"
+
+#: accounts/models.py:54 inventory/models.py:39
+msgid "description"
+msgstr "描述"
+
+#: accounts/models.py:57
+msgid "already confirmed email address"
+msgstr "是否已确认邮箱地址"
+
+#: accounts/models.py:59
+msgid "avatar"
+msgstr "头像"
+
+#: accounts/models.py:60
+msgid "position"
+msgstr "职位"
+
+#: accounts/models.py:62
+msgid "contact Number"
+msgstr "联系电话"
+
+#: accounts/models.py:78
+msgid "user"
+msgstr "用户"
+
+#: accounts/models.py:83
+#, fuzzy
+#| msgid "Account"
+msgid "account activation"
+msgstr "账号激活"
+
+#: accounts/models.py:84
+#, fuzzy
+#| msgid "email comfirm"
+msgid "email confirmation"
+msgstr "确认邮箱"
+
+#: accounts/models.py:85
+msgid "forget password"
+msgstr "忘记密码"
+
+#: accounts/models.py:86 inventory/models.py:13 inventory/models.py:29
+msgid "unknown"
+msgstr "未知"
+
+#: accounts/models.py:89
+msgid "token key"
+msgstr "Token"
+
+#: accounts/models.py:91
+msgid "the day token sent out"
+msgstr "Token发送日期"
+
+#: accounts/models.py:108
+msgid "token"
+msgstr ""
+
+#: accounts/views.py:108
+#, fuzzy
+#| msgid "Confirmation email sent to {email}."
+msgid "Confirm email successful."
+msgstr "确认邮件已发送到{email}。"
+
+#: accounts/views.py:110
+msgid "Confirm email unsuccessful."
+msgstr ""
+
+#: alpha/settings.py:166
+msgid "Confirmation email sent to {email}."
+msgstr "确认邮件已发送到{email}。"
+
+#: alpha/settings.py:170
+msgid ""
+"You have currently logged, if you need to log in to another account, please "
+"Logout first."
+msgstr "您当前已经登陆，如需要登录其他账号，请先退出登录。"
+
+#: alpha/settings.py:174
+msgid "Profile successfully updated."
+msgstr "资料已更新。"
+
+#: alpha/settings.py:178
+msgid "You have been log out."
+msgstr "您已退出登录。"
+
+#: alpha/settings.py:182
+#, fuzzy
+#| msgid "Profile successfully updated."
+msgid "Password successfully changed."
+msgstr "资料已更新。"
+
+#: alpha/settings.py:186
+msgid ""
+"Your account is now inactive and your data will be expunged in the next "
+"{expunge_hours} hours."
+msgstr "您的账号当前已冻结并且您的资料将会在{expunge_hours}小时内被删除。"
+
+#: handler/models.py:14
+msgid "repo name"
+msgstr "Repo库名"
+
+#: handler/models.py:18
+msgid "subversion URL to the repository"
+msgstr "Repository远程地址"
+
+#: handler/models.py:19
+#, fuzzy
+#| msgid "forget username"
+msgid "username"
+msgstr "用户"
+
+#: handler/models.py:20
+#, fuzzy
+#| msgid "forget password"
+msgid "password"
+msgstr "密码"
+
+#: handler/models.py:21
+#, fuzzy
+#| msgid "Permission"
+msgid "revision"
+msgstr "版本"
+
+#: handler/models.py:24
+msgid "absolute path"
+msgstr "绝对路径"
+
+#: handler/models.py:25
+#, fuzzy
+#| msgid "date joined"
+msgid "date created"
+msgstr "创建时间"
+
+#: handler/models.py:26
+#, fuzzy
+#| msgid "date joined"
+msgid "date updated"
+msgstr "更新时间"
+
+#: handler/models.py:38
+#, fuzzy
+#| msgid "position"
+msgid "repository"
+msgstr "版本库"
+
+#: inventory/models.py:10
+msgid "ok"
+msgstr "正常"
+
+#: inventory/models.py:11
+msgid "warning"
+msgstr "告警"
+
+#: inventory/models.py:12
+msgid "critical"
+msgstr "严重错误"
+
+#: inventory/models.py:14
+msgid "abandoned"
+msgstr "废弃"
+
+#: inventory/models.py:15
+msgid "under maintenance"
+msgstr "维护中"
+
+#: inventory/models.py:19
+msgid "development"
+msgstr "测试环境"
+
+#: inventory/models.py:20
+msgid "production"
+msgstr "生产环境"
+
+#: inventory/models.py:24
+msgid "physical machine"
+msgstr "物理机"
+
+#: inventory/models.py:25
+msgid "virtual machine"
+msgstr "虚拟机"
+
+#: inventory/models.py:26
+msgid "router"
+msgstr "路由器"
+
+#: inventory/models.py:27
+msgid "switch"
+msgstr "交换机"
+
+#: inventory/models.py:28
+msgid "firewall"
+msgstr "防火墙"
+
+#: inventory/models.py:37
+msgid "update timestamp"
+msgstr "更新时间"
+
+#: inventory/models.py:50 inventory/models.py:55
+msgid "hostgroup"
+msgstr "主机组"
+
+#: inventory/models.py:52 inventory/models.py:92
+msgid "current status"
+msgstr "当前状态"
+
+#: inventory/models.py:60
+msgid "hostname"
+msgstr "主机名"
+
+#: inventory/models.py:61
+msgid "owner"
+msgstr "所有者"
+
+#: inventory/models.py:63
+msgid "ipv4 address"
+msgstr "IPV4地址"
+
+#: inventory/models.py:65
+msgid "ipv6 address"
+msgstr "IPV6地址"
+
+#: inventory/models.py:67
+msgid "mac address"
+msgstr "MAC地址"
+
+#: inventory/models.py:68
+msgid "ssh port"
+msgstr "远程连接端口"
+
+#: inventory/models.py:70
+msgid "belong to which hostgroup"
+msgstr "属于主机组"
+
+#: inventory/models.py:72
+msgid "sudo user"
+msgstr "SUDO用户"
+
+#: inventory/models.py:74
+msgid "password of sudo user"
+msgstr "SUDO用户密码"
+
+#: inventory/models.py:76
+msgid "processor"
+msgstr "处理器型号"
+
+#: inventory/models.py:78
+msgid "processor count"
+msgstr "处理器数量"
+
+#: inventory/models.py:80
+msgid "manufacturer model"
+msgstr "厂家型号"
+
+#: inventory/models.py:82
+msgid "system distribution information"
+msgstr "系统相关信息"
+
+#: inventory/models.py:84
+msgid "disk total"
+msgstr "硬盘"
+
+#: inventory/models.py:86
+msgid "memory total"
+msgstr "内存"
+
+#: inventory/models.py:88
+msgid "memory free"
+msgstr "剩余内存"
+
+#: inventory/models.py:90
+msgid "asset number"
+msgstr "资产编号"
+
+#: inventory/models.py:94
+msgid "working environment"
+msgstr "工作环境"
+
+#: inventory/models.py:96
+msgid "machine type"
+msgstr "机器类型"
+
+#: inventory/models.py:98
+msgid "serial number"
+msgstr "序列号"
+
+#: inventory/models.py:107
+msgid "host"
+msgstr "主机"
+
+#: templates/_base/_account_bar.html:10
+msgid "Settings"
+msgstr ""
+
+#: templates/_base/_account_bar.html:12
+msgid "Admin"
+msgstr ""
+
+#: templates/_base/_account_bar.html:15 templates/accounts/logout.html.py:5
+#: templates/accounts/logout.html:11 templates/accounts/logout.html.py:15
+msgid "Log out"
+msgstr "退出"
+
+#: templates/_base/_account_bar.html:19 templates/accounts/login.html.py:5
+#: templates/accounts/login.html:11
+msgid "Log in"
+msgstr "登陆"
+
+#: templates/_base/_account_bar.html:21 templates/accounts/login.html.py:21
+msgid "Sign up"
+msgstr "注册"
+
+#: templates/_base/_footer.html:3
+msgid "&copy; 2016 &lt;your company here&gt;"
+msgstr ""
+
+#: templates/_base/_nav.html:5
+msgid "Inventory"
+msgstr ""
+
+#: templates/accounts/activation.html:4
+#, fuzzy
+#| msgid "Account"
+msgid "Account active"
+msgstr "账号激活"
+
+#: templates/accounts/base.html:7
+msgid "Profile"
+msgstr "个人资料"
+
+#: templates/accounts/base.html:10
+#, fuzzy
+#| msgid "Account information"
+msgid "Information"
+msgstr "基本信息"
+
+#: templates/accounts/base.html:13 templates/accounts/password_change.html:5
+#: templates/accounts/password_change.html:9
+#, fuzzy
+#| msgid "forget password"
+msgid "Change password"
+msgstr "修改密码"
+
+#: templates/accounts/base.html:16
+#, fuzzy
+#| msgid "Don't have an account?"
+msgid "Delete account"
+msgstr "删除账号"
+
+#: templates/accounts/delete.html:4 templates/accounts/delete.html.py:8
+msgid "Delete Account"
+msgstr "删除账号"
+
+#: templates/accounts/delete.html:9
+msgid ""
+"If you go ahead and delete your account, your information will be "
+"<b>expunged within %(ACCOUNT_DELETION_EXPUNGE_HOURS)s hours</b>."
+msgstr ""
+"如果您继续删除您的账号，您的信息将在%(ACCOUNT_DELETION_EXPUNGE_HOURS)小时内被"
+"移除。"
+
+#: templates/accounts/delete.html:11
+msgid "Delete My Account"
+msgstr "删除我的账号"
+
+#: templates/accounts/login.html:19
+msgid "Forgot your password?"
+msgstr "忘记密码"
+
+#: templates/accounts/login.html:21
+msgid "Don't have an account?"
+msgstr " "
+
+#: templates/accounts/logout.html:14
+msgid "Are you sure you want to log out?"
+msgstr "您确定退出登录吗？"
+
+#: templates/accounts/message/activation_email_subject.txt:3
+msgid "Please Confirm Your E-mail Address"
+msgstr "请确认您的邮箱地址"
+
+#: templates/accounts/password_reset.html:7
+#: templates/accounts/password_reset.html:15
+#, fuzzy
+#| msgid "forget password"
+msgid "Password reset"
+msgstr "密码"
+
+#: templates/accounts/password_reset.html:16
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll send you "
+"an email allowing you to reset it."
+msgstr ""
+
+#: templates/accounts/password_reset.html:22
+#, fuzzy
+#| msgid "forget password"
+msgid "Reset my password"
+msgstr "忘记密码"
+
+#: templates/accounts/password_reset.html:29
+#, python-format
+msgid ""
+"If you have any trouble resetting your password, contact us at <a href="
+"\"mailto:%(THEME_CONTACT_EMAIL)s\">%(THEME_CONTACT_EMAIL)s</a>."
+msgstr ""
+
+#: templates/accounts/profile.html:5
+#, fuzzy
+#| msgid "Account"
+msgid "Account"
+msgstr "用户激活"
+
+#: templates/accounts/profile.html:9
+msgid "Account information"
+msgstr "用户资料"
+
+#: templates/accounts/signup_closed.html:4
+#: templates/accounts/signup_closed.html:7
+msgid "Sign Up Closed"
+msgstr "关闭注册"
+
+#: templates/accounts/signup_closed.html:9
+msgid "We are sorry, but the sign up is currently closed."
+msgstr "很抱歉，当前已停止注册服务。"
+
+#: templates/accounts/signup_form.html:5
+msgid "Signup"
+msgstr "用户注册"
+
+#: templates/accounts/signup_form.html:11
+msgid "Sign Up"
+msgstr "用户注册"

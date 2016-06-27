@@ -1,0 +1,16 @@
+{% extends "site_base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block head_title %}{{ head_title }}{% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col-md-12">
+        <legend>{{ head_title }}</legend>
+        <form class="form-horizontal" method="post" action="{% url 'tasks:exec_cmd' %}">
+            {% crispy form %}
+        </form>
+    </div>
+</div>
+{% endblock %}

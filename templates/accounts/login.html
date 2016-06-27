@@ -1,0 +1,28 @@
+{% extends "site_base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block head_title %}{% trans "Log in" %}{% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col-md-12">
+        <form class="form-horizontal" method="post" action="{% url 'account_login' %}" autocapitalize="off" {% if form.is_multipart %} enctype="multipart/form-data"{% endif %}>
+            <legend>{% trans "Log in" %}</legend>
+            {% crispy form %}
+            {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <div id="div_id_password" class="form-group">
+                <div class="aab controls col-md-2"></div>
+                <div class="controls col-md-4">
+                    <a href="{% url 'account_password_reset' %}" class="btn btn-link">{% trans "Forgot your password?" %}</a>
+                    {% if not ACCOUNT_SIGNUP_DISABLED %}
+                    {% trans "Don't have an account?" %} <a href="{% url 'account_signup' %}">{% trans "Sign up" %}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

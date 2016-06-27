@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {% block viewport %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% endblock %}
+        <meta name="description" content="">
+        <meta name="author" content="">
+        {% block html5shim %}
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        {% endblock %}
+        <title>{% block head_title_base %}{% if site.name %}{{ site.name }} | {% endif %}{% block head_title %}{% endblock %}{% endblock %}</title>
+        {% block styles %}{% endblock %}
+        {% block extra_head %}{% endblock %}
+    </head>
+
+    <body class="{% block body_class %}{% endblock %}" id="{% block body_id %}{% endblock %}" {% block body_extra_attributes %}{% endblock %}>
+        {% block fixed_navbar %}
+        <nav class="navbar navbar-default {% block navbar_class %}navbar-fixed-top{% endblock %}">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    {% block navbar_brand %}<a class="navbar-brand" href="/">{{ site.name }}</a>{% endblock %}
+                </div>
+                <div id="navbar" class="collapse navbar-collapse navbar-responsive-collapse">
+                    {% block nav %}{% include "_base/_nav.html" %}{% endblock %}
+                    {% block search_bar %}{% include "_base/_search_bar.html" %}{% endblock %}
+                    {% block account_bar %}{% include "_base/_account_bar.html" %}{% endblock %}
+                </div>
+            </div>
+        </nav>
+        {% endblock %}
+        {% block extra_header %}{% endblock %}
+
+        {% block body_base %}
+        <div class="container">
+            {% include "_base/_messages.html" %} {% block body %} {% endblock %}
+        </div>
+        {% endblock %}
+
+        {% block footer_base %}
+        <hr />
+        <footer>
+            <div class="container">
+                {% block footer %}{% endblock %}
+            </div>
+        </footer>
+        {% endblock %}
+
+        {% block scripts %}{% endblock %}
+        {% block extra_body_base %}
+            {% block extra_body %}{% endblock %}
+        {% endblock %}
+    </body>
+</html>

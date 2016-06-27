@@ -1,0 +1,8 @@
+{% load i18n %}
+{% autoescape off %}Hello from {{ current_site.name }}!
+
+You're receiving this e-mail because user {{ user.username }} at {{ current_site.domain }} has given yours as an e-mail address to connect their account.
+
+To confirm this is correct in {{ expiration_days }} days, go to {{ protocol }}://{{ current_site.domain }}{{ token_url }}
+{% endautoescape %}
+Thank you from {{ current_site.name }}!

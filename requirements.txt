@@ -1,0 +1,9 @@
+ansible
+celery
+django
+django-celery
+django-crispy-forms
+redis
+uwsgi
+# optional
+supervisor

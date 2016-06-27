@@ -1,0 +1,46 @@
+{% extends "site_base.html" %}
+{% load i18n %}
+
+{% block head_title %}{{ head_title }}{% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">{% blocktrans with repo_counts=repo_list.count %}{{ repo_counts }} repositories.{% endblocktrans %}{% if request.user.is_staff %}<a href="{% url 'tasks:repo_create' %}"><i class="fa fa-plus-square-o"></i></a>{% endif %}</h3>
+            </div>
+            <div class="panel-body">
+                {% if not repo_list %}
+                {% blocktrans %}<p>There's not any <code>repositories</code> yet.</p>{% endblocktrans %}
+                {% else %}
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>{% trans "Name" %}</th>
+                            <th>{% trans "Remote URL" %}</th>
+                            <th>{% trans "Hosts" %}</th>
+                            <th>{% trans "Hostgroups" %}</th>
+                            <th>{% trans "Revision" %}</th>
+                            <th>{% trans "LastUpdateTime" %}</th>
+                        </tr>
+                    </thead>
+                    {% for repo in repo_list %}
+                    <tr>
+                        <td><a href="{% url 'tasks:repo_detail' pk=repo.pk %}"><li><i class="fa fa-search-plus"></i>{{ repo.name }}</li></a></td>
+                        <td>{{ repo.url }}</td>
+                        <td>{% for host in repo.hosts.all %}{{ host.hostname }} {% endfor %}</td>
+                        <td>{% for hostgroup in repo.hostgroups.all %}{{ hostgroup.name }}{% endfor %}</td>
+                        <td>{{ repo.revision }}</td>
+                        <td>{{ repo.updated }}</td>
+                    </tr>
+                    {% endfor %}
+                    <tbody>
+                    </tbody>
+                </table>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

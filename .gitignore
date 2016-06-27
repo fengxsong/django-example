@@ -1,0 +1,8 @@
+*.pyc
+*.pyo
+node_modules/
+_build/
+*.db
+*.sqlite3
+media/
+*.log

@@ -1,0 +1,8 @@
+{% load i18n %}
+
+{% if request.user.is_authenticated %}
+<ul class="nav navbar-nav">
+    <li><a href="#inventory">{% trans "Inventory" %}</a></li>
+    <li><a href="{% url 'tasks:repo_list' %}">{% trans "Repositories" %}</a></li>
+</ul>
+{% endif %}
